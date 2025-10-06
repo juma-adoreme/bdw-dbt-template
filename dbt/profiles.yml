@@ -1,0 +1,21 @@
+demo_project:
+  outputs:
+    prd:
+      dataset: dbt
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: bigdataweek2025
+      threads: 2
+      type: bigquery
+  target: prd
+elementary:
+  outputs:
+    default:
+      type: "bigquery"
+      project: "bigdataweek2025"
+      dataset: "dbt_elementary"
+      method: "oauth"
+      threads: 10

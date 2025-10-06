@@ -1,3 +1,7 @@
+__flow_output__/
+logs/
+edr_target/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

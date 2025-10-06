@@ -1,0 +1,11 @@
+gcp:
+  project_id: bigdataweek2025
+
+dbt:
+  project_root: ./dbt
+  profiles_dir: ./dbt/
+  profile_name: demo_project
+
+slack:
+  bot_secret_id: slack_pbot_token
+  channel_id: C09JCLLK1CP
