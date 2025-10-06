@@ -8,4 +8,4 @@ dbt:
 
 slack:
   bot_secret_id: slack_pbot_token
-  channel_id: C09JCLLK1CP
+  # channel_id: C09JCLLK1CP
