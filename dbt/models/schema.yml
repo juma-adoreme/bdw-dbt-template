@@ -1,0 +1,19 @@
+
+models:
+    - name: generated_table
+      config:
+        elementary:
+          timestamp_column: "_date"
+      tests:
+        - elementary.volume_anomalies:
+            # where_expression: "subtotal > 0"
+            time_bucket:
+              period: day
+              count: 1
+            tags: ["elementary"]
+            config:
+              severity: warn
+        - elementary.schema_changes:
+            tags: ["elementary"]
+            config:
+              severity: warn
